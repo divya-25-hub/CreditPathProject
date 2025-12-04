@@ -44,7 +44,8 @@ def predict(data: LoanData):
     action = recovery_action(category)
 
     return {
-        "risk_category": category,
-        "probability": round(prob, 4),
-        "recommendation": action
-    }
+    "risk_category": category,
+    "probability": float(round(prob, 4)),
+    "recommendation": action
+}
+
